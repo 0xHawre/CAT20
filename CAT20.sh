@@ -20,15 +20,18 @@ sudo npm i -g yarn
 # Clone the CAT Protocol repository and build
 git clone https://github.com/CATProtocol/cat-token-box && cd cat-token-box
 sudo chown -R $USER:$USER ~/cat-token-box
-sudo yarn install && yarn build
+sudo yarn install 
+sudo yarn build
 
 # Set up the tracker
-cd packages/tracker
-sudo chmod 777 docker/data && sudo chmod 777 docker/pgdata
+cd ./packages/tracker/
+sudo chmod 777 docker/data 
+sudo chmod 777 docker/pgdata
 sudo docker compose up -d
 
 # Build the tracker Docker image
-cd ../../ && sudo docker build -t tracker:latest .
+cd ../../ 
+sudo docker build -t tracker:latest .
 
 # Read node name from user input
 read -p "node name: " vname
@@ -43,7 +46,7 @@ sudo docker run -d \
   tracker:latest
 
 # Set up CLI config
-cd $HOME/cat-token-box/packages/cli
+cd packages/cli
 
 cat <<EOF > config.json
 {
