@@ -9,6 +9,6 @@ git clone https://github.com/0xHawre/CAT20.git && cd CAT20
 ```
 ## run script
 ```sh 
-chmod +x script.sh CAT20.sh && ./CAT20.sh 
+chmod +x ./CAT20.sh  CAT20.sh && ./CAT20.sh 
 ```
 
