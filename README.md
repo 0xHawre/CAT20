@@ -12,3 +12,12 @@ git clone https://github.com/0xHawre/CAT20.git && cd CAT20
 chmod +x ./CAT20.sh  CAT20.sh && ./CAT20.sh 
 ```
 
+## Show token balances
+```sh
+yarn cli wallet balances
+```
+![Screenshot 2024-09-11 at 10 57 19 PM](https://github.com/user-attachments/assets/10c0e258-a604-4533-bc14-1fd955dad853)
+
+## wait to gain 100% then you can mint CAT 
+
+
