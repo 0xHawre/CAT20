@@ -19,5 +19,7 @@ yarn cli wallet balances
 ![Screenshot 2024-09-11 at 10 57 19 PM](https://github.com/user-attachments/assets/10c0e258-a604-4533-bc14-1fd955dad853)
 
 ## wait to gain 100% then you can mint CAT 
-
+## Use this command to mint with current market fee
+```sh
+sudo yarn cli mint -i 45ee725c2c5993b3e4d308842d87e973bf1951f5f7a804b21e4dd964ecd12d6b_0 5 --fee-rate $(curl -s https://explorer.unisat.io/fractal-mainnet/api/bitcoin-info/fee | jq '.data.economyFee')```
 
