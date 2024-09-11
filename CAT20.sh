@@ -46,6 +46,7 @@ sudo docker run -d \
   tracker:latest
 
 # Set up CLI config
+cd cat-token-box/
 cd packages/cli
 
 cat <<EOF > config.json
