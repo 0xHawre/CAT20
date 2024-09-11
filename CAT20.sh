@@ -24,7 +24,7 @@ cd packages/tracker
 
 sudo chmod 777 docker/data && sudo chmod 777 docker/pgdata && sudo docker compose up -d
 
-cd $HOME/cat-token-box && sudo docker build -t tracker:latest .
+cd ../../ && docker build -t tracker:latest .
 
 read -p "node name : vname
 
